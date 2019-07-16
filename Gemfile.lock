@@ -38,7 +38,7 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.4.0)
-    cookiejar (0.3.0)
+    cookiejar (0.3.3)
     daemons (1.1.9)
     em-http-request (1.0.3)
       addressable (>= 2.2.3)
