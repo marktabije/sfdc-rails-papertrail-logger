@@ -6,7 +6,9 @@ client = Restforce.new :username => ENV['SFDC_USERNAME'],
   :password       => ENV['SFDC_PASSWORD'],
   :security_token => ENV['SFDC_SECURITY_TOKEN'],
   :client_id      => ENV['SFDC_CLIENT_ID'],
-  :client_secret  => ENV['SFDC_CLIENT_SECRET']
+  :client_secret  => ENV['SFDC_CLIENT_SECRET'],
+	:host				    => 'test.salesforce.com',
+	:api_version    =>  '41.0'
 
 # simply for debugging
 puts client.to_yaml
