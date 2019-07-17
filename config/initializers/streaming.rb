@@ -1,5 +1,6 @@
 require 'restforce'
 require 'faye'
+require 'fileutils'
 
 # Initialize a client with your username/password.
 client = Restforce.new :username => ENV['SFDC_USERNAME'],
@@ -27,3 +28,5 @@ begin
 rescue
   puts "Could not authenticate. Not listening for streaming events."
 end
+
+FileUtils.mv('/app/salesforce/cookie_validation.rb', '/app/vendor/bundle/ruby/2.5.0/gems/cookiejar-0.3.3/lib/cookiejar')
